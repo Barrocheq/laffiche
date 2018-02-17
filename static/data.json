@@ -1,0 +1,16 @@
+{
+	"0": {
+		"title": "BabySitting",
+		"score": "weak",
+		"urgent": true,
+		"text": "Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée. Si vous chercher quelqu'un de serieux pour vos enfants, n'hésitez pas à me contacter via l'Affiche.",
+		"pro": false
+	},
+	"1": {
+		"title": "Vente Vélo",
+		"score": "good",
+		"urgent": false,
+		"text": "Bonjour, je suis Thomas, je vends mon vélo pour la mautide somme de 150e. bla bla bla blabla bla bla blabla bla bla blabla bla bla bla",
+		"pro": true
+	}
+}
