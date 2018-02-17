@@ -1,6 +1,6 @@
 <template>
   <div >
-    <v-toolbar :class="{'mi-padding-lg-and-up': $vuetify.breakpoint.lgAndUp}" prominent flat fixed style="border-bottom: 1px solid #d8e0e9;background-color:#fff;z-index:10; height:72px">
+    <v-toolbar :class="{'mi-padding-lg-and-up': $vuetify.breakpoint.lgAndUp}" prominent flat fixed style="background-color:rgba(0,0,0,0);; height:72px">
       <v-toolbar-side-icon style="margin-top:12px"
         @click.stop="sideNav = !sideNav"
         class="hidden-md-and-up red--text"></v-toolbar-side-icon>
