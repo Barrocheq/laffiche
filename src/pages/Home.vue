@@ -1,7 +1,8 @@
 <template>
-  <div style="width:100%;height:100%;border:solid 1px red">
-    <Toolbar ref="Toolbar" style="margin-bottom:72px"/>
+  <div class="color-back" style="width:100%;height:100%;">
+    <Toolbar ref="Toolbar"/>
 
+<<<<<<< HEAD
    <div v-for="card in data">
    <vue-draggable-resizable :resizable="false" :x="generateX()" :y="generateY()" >
       <Annonce ref="annonce" :card="card" />
@@ -10,6 +11,20 @@
     <vue-draggable-resizable :resizable="false" :x="200" :y="200">
     <Search ref="search" v-on:clicked-show-detail="clickedShowDetailModal" v-on:reset="removeFilter"/>
   </vue-draggable-resizable>
+=======
+  <vue-draggable-resizable :resizable="false" style="z-index:10">
+    <Search ref="search"/>
+  </vue-draggable-resizable>
+    
+        <vue-draggable-resizable :resizable="false" v-for="card in data" style="z-index:11">
+      <Annonce ref="annonce" :card="card" />
+    </vue-draggable-resizable>
+
+
+
+
+
+>>>>>>> felix
 
   </div>
 </template>
@@ -76,5 +91,56 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+@font-face {
+  font-family: mainFont;
+  src: url('/static/Quicksand-Bold.ttf');
+}
 
+* {
+  font-family: mainFont;
+}
+
+.color-back {
+	background: linear-gradient(-45deg, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 </style>

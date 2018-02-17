@@ -1,8 +1,10 @@
 {
 	"0": {
+		"name": "Mathilde V.",
 		"title": "BabySitting",
-		"score": "weak",
+		"score": "5/5",
 		"urgent": true,
+<<<<<<< HEAD
 		"text": "Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée. Si vous chercher quelqu'un de serieux pour vos enfants, n'hésitez pas à me contacter via l'Affiche.",
 		"pro": false,
 		"timeToShow": 6
@@ -47,5 +49,9 @@
 		"text": "Bonjour, je suis Thomas, je vends mon vélo pour la mautide somme de 150e. bla bla bla blabla bla bla blabla bla bla blabla bla bla bla",
 		"pro": true,
 		"timeToShow": 13
+=======
+		"text": "Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée.",
+		"pro": false
+>>>>>>> felix
 	}
 }
