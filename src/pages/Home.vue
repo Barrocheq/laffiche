@@ -2,19 +2,13 @@
   <div style="width:100%;height:100%;border:solid 1px red">
     <Toolbar ref="Toolbar" style="margin-bottom:72px"/>
 
+   <vue-draggable-resizable :resizable="false" v-for="card in data">
+      <Annonce ref="annonce" :card="card" />
+    </vue-draggable-resizable>
 
-<vue-draggable-resizable :resizable="false">
-  <Annonce ref="annonce"/>
-</vue-draggable-resizable>
-
-<vue-draggable-resizable :resizable="false">
-  <Annonce ref="annonce"/>
-</vue-draggable-resizable>
-
-
-<vue-draggable-resizable :resizable="false">
-  <Search ref="search"/>
-</vue-draggable-resizable>
+    <vue-draggable-resizable :resizable="false">
+    <Search ref="search"/>
+  </vue-draggable-resizable>
 
   </div>
 </template>
@@ -23,7 +17,7 @@
 import Annonce from "@/components/Annonce";
 import Toolbar from "@/components/Toolbar";
 import Search from "@/components/Search";
-
+import json from "@/../static/data.json"
 import Vue from "vue";
 import VueDraggableResizable from "vue-draggable-resizable";
 
@@ -34,6 +28,7 @@ export default {
   name: "Home",
   data: function() {
     return {
+      data: json,
       width: 0,
       height: 0,
       x: 0,
@@ -52,13 +47,17 @@ export default {
       this.y = y;
     }
   },
-  mounted: function() {},
+  mounted: function() {
+    // console.log(this.data)
+  },
   components: {
     Annonce,
     Toolbar,
     Search
   },
-  computed: {}
+  computed: {
+
+  }
 };
 </script>
 

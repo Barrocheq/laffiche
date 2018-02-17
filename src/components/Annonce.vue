@@ -1,21 +1,23 @@
 <template>
   <v-flex xs2>
-    <v-card color="blue-grey darken-2" class="white--text" style="width: 330px">
+    <v-card :color="color" class="white--text" style="width: 330px">
       <v-card-title primary-title>
 		<!-- <v-icon large left color="white">insert_photo</v-icon> -->
 			<v-layout row wrap xs12 justify-align-content>
 				<v-layout>
 					<img src="../../static/img/avatar.svg" alt="" height="100">
 			        <v-layout row wrap xs12>
-						<div class="headline" xs12>BabySitting</div>
+						<div class="headline" xs12>{{card.title}}</div>
 						<div xs12>
-							<v-icon large left color="green">check_circle</v-icon>
-							/ 
-							<v-icon large left color="red">hourglass_empty</v-icon>
+							<v-icon large left color="green" v-if="card.score=='good'">check_circle</v-icon>
+							<v-icon large left color="orange" v-if="card.score=='weak'">check_circle</v-icon>
+							<v-icon large left color="red" v-if="card.score=='bad'">check_circle</v-icon>
+							/
+							<v-icon v-if="card.urgent" large left color="red">hourglass_empty</v-icon>
 						</div>
 			    	</v-layout>
 			    </v-layout>
-				<div>Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée. Si vous chercher quelqu'un de serieux pour vos enfants, n'hésitez pas à me contacter via l'Affiche.</div>
+				<div>{{card.text}}</div>
 		    </v-layout>
       </v-card-title>
       <v-card-actions>
@@ -25,6 +27,30 @@
   </v-flex>
 </template>
 <!-- <v-icon large color="green darken-2">check_circle</v-icon> -->
-<style scoped>
-	
-</style>
+<script type="text/javascript">
+	export default {
+	  name: "Annonce",
+	  props: ['card'],
+	  data: function() {
+	    return {
+	    }
+	  },
+	  methods: {
+
+	  },
+	  mounted: function() {
+	  	console.log(this.card)
+	  },
+	  components: {
+
+	  },
+	  computed: {
+	  	color: function () {
+	  		if(this.card.pro) 
+	  			return "orange lighten-1"
+	  		else
+	  			return "green darken-2"
+	  	}
+	  }
+	};
+</script>
