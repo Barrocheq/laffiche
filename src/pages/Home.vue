@@ -1,21 +1,28 @@
 <template>
-  <div style="width:100%; border:solid 1px red">
+  <div style="width:100%;height:100%;border:solid 1px red">
     <Toolbar ref="Toolbar" style="margin-bottom:72px"/>
-    <h1 style="color:red">home</h1>
 
-  <div style="height: 500px; width: 500px; border: 1px solid red; position: relative;">
-    <vue-draggable-resizable :w="100" :h="100" v-on:dragging="onDrag" v-on:resizing="onResize" :parent="true">
-      <Annonce ref="annonce"/>
-    </vue-draggable-resizable>
-  </div>
 
-    
+<vue-draggable-resizable :resizable="false">
+  <Annonce ref="annonce"/>
+</vue-draggable-resizable>
+
+<vue-draggable-resizable :resizable="false">
+  <Annonce ref="annonce"/>
+</vue-draggable-resizable>
+
+
+<vue-draggable-resizable :resizable="false">
+  <Search ref="search"/>
+</vue-draggable-resizable>
+
   </div>
 </template>
 
 <script>
 import Annonce from "@/components/Annonce";
 import Toolbar from "@/components/Toolbar";
+import Search from "@/components/Search";
 
 import Vue from "vue";
 import VueDraggableResizable from "vue-draggable-resizable";
@@ -48,7 +55,8 @@ export default {
   mounted: function() {},
   components: {
     Annonce,
-    Toolbar
+    Toolbar,
+    Search
   },
   computed: {}
 };

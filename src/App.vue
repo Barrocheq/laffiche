@@ -14,3 +14,11 @@ export default {
   name: "App"
 };
 </script>
+
+<style>
+*, *:active, *:focus{
+  user-select: none;
+  outline: none;
+  text-decoration: none;
+} 
+</style>
