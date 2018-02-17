@@ -5,12 +5,11 @@
 
   <div style="height: 500px; width: 500px; border: 1px solid red; position: relative;">
     <vue-draggable-resizable :w="100" :h="100" v-on:dragging="onDrag" v-on:resizing="onResize" :parent="true">
-      <p>Hello! I'm a flexible component. You can drag me around and you can resize me.<br>
-      X: {{ x }} / Y: {{ y }} - Width: {{ width }} / Height: {{ height }}</p>
+      <Annonce ref="annonce"/>
     </vue-draggable-resizable>
   </div>
 
-    <Annonce ref="annonce"/>
+    
   </div>
 </template>
 
