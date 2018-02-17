@@ -1,0 +1,7 @@
+assistant_url: https://github.com/snipsco/demo-assistants/raw/master/assistants/weather.zip
+skills:
+  - url: https://github.com/snipsco/snips-skill-owm
+    package_name: snipsowm
+    params:
+        default_location: "Paris, fr"
+        api_key: a322f5315d6afa31628c1384e389ffc3

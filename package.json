@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "firebase": "^4.10.0",
+    "moment": "^2.20.1",
     "v-dragged": "0.0.5",
     "vue": "^2.5.2",
     "vue-draggable-resizable": "^1.6.1",

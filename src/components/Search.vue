@@ -6,8 +6,8 @@
       floating
       dense
     >
-        <v-text-field @click="clear" prepend-icon="search" hide-details single-line>{{searchText}}</v-text-field>
-        <v-btn icon>
+        <v-text-field @change="start" prepend-icon="search" hide-details single-line v-model="searchText"></v-text-field>
+        <v-btn icon @click="reset">
           <v-icon>mic</v-icon>
         </v-btn>
     </v-toolbar>
@@ -22,7 +22,17 @@
     }),
     methods: {
       clear () {
-        this.searchText =""
+        this.searchText = ""
+      },
+      start () {
+        if (this.searchText == "" ) {
+          this.$emit('reset', this.searchText);
+        }
+        this.$emit('clicked-show-detail', this.searchText);
+      },
+      reset () {
+        this.searchText = ""
+        this.$emit('reset', this.searchText);
       }
     }
   }

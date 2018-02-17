@@ -2,12 +2,13 @@
   <div style="width:100%;height:100%;border:solid 1px red">
     <Toolbar ref="Toolbar" style="margin-bottom:72px"/>
 
-   <vue-draggable-resizable :resizable="false" v-for="card in data">
+   <div v-for="card in data">
+   <vue-draggable-resizable :resizable="false" :x="generateX()" :y="generateY()" >
       <Annonce ref="annonce" :card="card" />
     </vue-draggable-resizable>
-
-    <vue-draggable-resizable :resizable="false">
-    <Search ref="search"/>
+  </div>
+    <vue-draggable-resizable :resizable="false" :x="200" :y="200">
+    <Search ref="search" v-on:clicked-show-detail="clickedShowDetailModal" v-on:reset="removeFilter"/>
   </vue-draggable-resizable>
 
   </div>
@@ -29,34 +30,46 @@ export default {
   data: function() {
     return {
       data: json,
+      dataRaw: json,
+      search: '',
       width: 0,
       height: 0,
       x: 0,
       y: 0
     };
   },
-  methods: {
-    onResize: function(x, y, width, height) {
-      this.x = x;
-      this.y = y;
-      this.width = width;
-      this.height = height;
-    },
-    onDrag: function(x, y) {
-      this.x = x;
-      this.y = y;
-    }
-  },
   mounted: function() {
-    // console.log(this.data)
+
   },
   components: {
     Annonce,
     Toolbar,
     Search
   },
-  computed: {
+  methods: {
+    removeFilter: function (v) {
+      this.data = this.dataRaw
+    },
+    clickedShowDetailModal: function(v) {
+      let datatemps = this.data;
+      this.data = []
 
+      for(let i = 0; i < Object.keys(datatemps).length; i++) {
+        if((datatemps[i].title.toLowerCase()).search(v.toLowerCase()) == 0) {
+          this.data.push(datatemps[i])
+        }
+
+      }
+
+      console.log(this.data)
+
+    },
+    generateX: function() {
+      return Math.random()*1000;
+    },
+    generateY: function() {
+      return Math.random()*600
+    }
   }
 };
 </script>
