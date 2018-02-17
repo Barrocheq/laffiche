@@ -10,6 +10,13 @@ Vue.use(Vuetify)
 
 Vue.config.productionTip = false
 
+import VDragged from 'v-dragged'
+
+Vue.use(VDragged) 
+
+
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
