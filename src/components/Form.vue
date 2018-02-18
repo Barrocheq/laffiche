@@ -1,8 +1,8 @@
 <template>
   <v-flex xs2 style="cursor:pointer">
-    <transition name="pop">
+
     <div v-if="!createAnnonce" class="newForm" @click="createAnnonce=!createAnnonce"></div>
-    </transition>
+
 
 
     <transition name="pop">
