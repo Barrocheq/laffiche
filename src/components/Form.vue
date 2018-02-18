@@ -80,8 +80,10 @@ export default {
         urgent: false,
         text: this.text,
         pro: false,
-        timeToShow: 1
+        timeToShow: 10
       };
+
+      this.$emit('posterAnnonce', newAnnonce)
       this.createAnnonce=!this.createAnnonce
     }
   }

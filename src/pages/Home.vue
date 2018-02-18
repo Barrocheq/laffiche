@@ -3,7 +3,7 @@
     <Toolbar ref="toolbar"/>
 
 <vue-draggable-resizable :resizable="false" :x="1000" :y="480" style="z-index:10">
-    <Form ref="form"/>
+    <Form ref="form" v-on:posterAnnonce="addAnnoncetoJson"/>
 </vue-draggable-resizable>
 
    <div v-for="card in data" style="z-index:11" :key="card">
@@ -54,6 +54,18 @@ export default {
     Form
   },
   methods: {
+    addAnnoncetoJson: function (v) {
+      // this.data.push(v)
+
+      let datatemps = this.data;
+      this.data = []
+
+      this.data.push(v)
+
+      for(let i = 0; i < Object.keys(datatemps).length; i++) {
+          this.data.push(datatemps[i])
+      }
+    },
     removeFilter: function (v) {
       this.data = this.dataRaw
     },
