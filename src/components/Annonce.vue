@@ -3,6 +3,7 @@
   <v-flex xs2 v-show="show">
     <v-card class="elevation-0 color-back bigger white--text" style="transition:0.2s;cursor:pointer;position: relative;border:solid 2px white;border-radius:50%;width: 330px; height:330px;background-color:rgba(0,0,0,0)">
 		<!-- <v-icon large left color="white">insert_photo</v-icon> -->
+		<div v-if="card.name">
 			<div style="font-size:24px;position:absolute;top:32px;left:120px;">{{ card.name}}</div>
 
 			<div style="font-size:30px;position:absolute;top:100px;width:100%;text-align:center">{{ card.title}}</div>
@@ -17,17 +18,32 @@
 
 				<div v-if="card.pro == true" style="display:flex;justify-content:center;align-items:center;   padding-right:10px;padding-left:10px;font-size:16px;position:absolute;bottom:50px;width:100%;text-align:center">
           <div class="sponsor"></div>
+<<<<<<< HEAD
 					<div style="margin-left:-18px;font-size:13px">€</div>
           <p style="margin-bottom:-1px;margin-left:15px" v-if="">	 Sponsorisée</p>
+=======
+					<div style="margin-left:-18px;font-size:13px;">€</div>
+          <p style="margin-bottom:-1px;margin-left:15px">	 Sponsorisée</p>
+>>>>>>> felix
         </div>
 
 			  <div style="display:flex;justify-content:center;align-items:center;  padding-right:10px;padding-left:10px;font-size:16px;position:absolute;bottom:20px;width:100%;text-align:center">
           <div class="star"></div>
           <p style="margin-bottom:-1px;margin-left:5px">   {{card.score}}</p>
         </div>
+		</div>
+		<div v-if="card.map" style="width:100%; height:100%">
+			<img src="../../static/map.png" alt="">
+		</div>
     </v-card>
+<<<<<<< HEAD
 		<v-avatar size="100px" slot="activator" style="position:absolute;top:0px;left:0px;">
 			<img :src="card.url" alt="" height="100" style="border:solid 2px white">
+=======
+		<v-avatar v-if="card.name" size="100px" slot="activator" style="position:absolute;top:0px;left:0px;background-color:white">
+			<img :src="randomUser" alt="" height="100" style="border:solid 2px white">
+			<div style="width:330px;height:330px; background-color:white;z-index:111"></div>
+>>>>>>> felix
 		</v-avatar>
   </v-flex>
 </transition>
@@ -71,7 +87,7 @@
 	  },
 	  computed: {
 			randomUser(){
-				let randomUser = 'https://randomuser.me/api/portraits/women/'+ Math.floor(Math.random() * 50)+'.jpg'
+				let randomUser = 'https://randomuser.me/api/portraits/lego/'+ Math.floor(Math.random() * 8)+'.jpg'
 				return randomUser
 			},
 	  	color: function () {

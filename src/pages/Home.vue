@@ -2,19 +2,26 @@
   <div class="color-back" style="width:100%;height:100%;">
     <Toolbar ref="toolbar"/>
 
+<<<<<<< HEAD
 <vue-draggable-resizable :resizable="false" :x="1000" :y="480" style="z-index:10">
     <Form ref="form" v-on:posterAnnonce="addAnnoncetoJson"/>
 </vue-draggable-resizable>
+=======
+    <Form style="position:fixed; right:15%; top:100px;z-index:11111" ref="form"/>
+>>>>>>> felix
 
    <div v-for="card in data" style="z-index:11" :key="card">
-   <vue-draggable-resizable :resizable="false" :x="generateX()" :y="generateY()" >
+      <vue-draggable-resizable v-if="card.map" :resizable="false" :x="50" :y="50" >
       <Annonce ref="annonce" :card="card" />
     </vue-draggable-resizable>
-  </div>
-    <vue-draggable-resizable :resizable="false" :x="500" :y="500" style="z-index:10">
-    <Search ref="search" v-on:clicked-show-detail="clickedShowDetailModal" v-on:reset="removeFilter"/>
-  </vue-draggable-resizable>
+   <vue-draggable-resizable v-else :resizable="false" :x="generateX()" :y="generateY()" >
+      <Annonce ref="annonce" :card="card" />
+    </vue-draggable-resizable>
+    </div>
 
+    <div style="position:fixed; top:100px;width:100%;padding-right:80px;">
+    <Search style="margin-right:auto;margin-left:auto;" ref="search" v-on:clicked-show-detail="clickedShowDetailModal" v-on:reset="removeFilter"/>
+    </div>
   </div>
 </template>
 

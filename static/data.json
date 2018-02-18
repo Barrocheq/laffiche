@@ -4,10 +4,16 @@
         "title": "Cours",
         "score": "5/5",
         "urgent": false,
+<<<<<<< HEAD
         "text": "Bonjour, je suis Mathilde, 21 ans étudiante en physique, je donne des cours de maths jusqu'au niveau Lycée. Contactez moi via Okiko pour plus d’infos.",
         "pro": false,
         "timeToShow": 1,
         "url" : "../../static/img/photo/18.jpg"
+=======
+        "text": "Bonjour, je suis Mathilde, 21 ans étudiante en physique, je donne des cours de maths jusqu'au niveau Lycée. Contactez moi via okiko pour plus d’infos.",
+        "pro": false,
+        "timeToShow": 6
+>>>>>>> felix
     },
     "1": {
         "name": "Margot L..",
@@ -16,8 +22,12 @@
         "urgent": false,
         "text": "Hello, je vends mon vélo 150€. Disponible par e-mail. Margot",
         "pro": true,
+<<<<<<< HEAD
         "timeToShow": 7,
         "url" : "../../static/img/photo/26.jpg"
+=======
+        "timeToShow": 7
+>>>>>>> felix
     },
     "2": {
         "name": "Tiphaine S..",
@@ -26,8 +36,12 @@
         "urgent": true,
         "text": "Bonjour, je m’appelle Julie, j'ai 17 ans et suis disponible pour garder votre enfant 2 jours/semaine. Merci",
         "pro": false,
+<<<<<<< HEAD
         "timeToShow": 8,
         "url" : "../../static/img/photo/36.jpg"
+=======
+        "timeToShow": 8
+>>>>>>> felix
     },
     "3": {
         "name": "Sylvie T.",
@@ -36,8 +50,12 @@
         "urgent": false,
         "text": "Bonjour, Sylvie, je cherche une pompe à vélo d’occasion pas trop chère, budget 10€. Dispo par tel au 06 51 78 32 41.",
         "pro": true,
+<<<<<<< HEAD
         "timeToShow": 9,
         "url" : "../../static/img/photo/48.jpg"
+=======
+        "timeToShow": 9
+>>>>>>> felix
     },
     "4": {
         "name": "Sophie B.",
@@ -46,32 +64,49 @@
         "urgent": false,
         "text": "Bonjour, nous avons besoin en urgence d’une babysitter pour mardi soir 19h-23h. Sophie et Fred.",
         "pro": false,
+<<<<<<< HEAD
         "timeToShow": 11,
         "url" : "../../static/img/photo/60.jpg"
+=======
+        "timeToShow": 11
+>>>>>>> felix
     },
     "5": {
         "name": "Anne R.",
         "title": "Vente Vélo",
         "score": "3/5",
         "urgent": false,
+<<<<<<< HEAD
         "timeToShow": 5,
         "text": "Bonjour, Anne, recherche vélo style hollandais, si possible de couleur jaune. Contactez moi par email.",
         "pro": false,
         "url" : "../../static/img/photo/75.jpg"
+=======
+        "timeToShow": 13,
+        "text": "Bonjour, Anne, recherche vélo style hollandais, si possible de couleur jaune. Contactez moi par email.",
+        "pro": false
+>>>>>>> felix
     },
     "6": {
         "name": "Antoine J.",
         "title": "Soirée de quartier",
         "score": "4/5",
         "urgent": true,
+<<<<<<< HEAD
         "timeToShow": 6,
         "text": "Bonjour, on organise une soirée pour les habitants du quartier ! Prix 20€, contactez moi !!.",
         "pro": false,
         "url" : "../../static/img/photo/8.jpg"
+=======
+        "timeToShow": 13,
+        "text": "Bonjour, on organise une soirée pour les habitants du quartier ! Prix 20€, contactez moi !!.",
+        "pro": false
+>>>>>>> felix
     },
     "7": {
         "name": "Eric J.",
         "title": "Fête du village",
+<<<<<<< HEAD
         "score": "5/5",
         "urgent": true,
         "timeToShow": 10,
@@ -110,4 +145,15 @@
         "pro": false,
         "url" : "../../static/img/photo/86.jpg"
     }
+=======
+        "score": "4/5",
+        "urgent": true,
+        "timeToShow": 13,
+        "text": "La fête du village c'est l'événement de l'année VENEZ NOMBREUX !!.",
+        "pro": false
+    },
+	"8": {
+		"map": true
+	}
+>>>>>>> felix
 }

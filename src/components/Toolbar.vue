@@ -9,7 +9,7 @@
       </v-toolbar-items>
       <v-spacer></v-spacer>
 
-      <v-toolbar-title style="margin-top:8px">
+      <v-toolbar-title style="margin-top:48px">
         <router-link to="/" tag="span" style="cursor: pointer;">
         <span class="blue--text hidden-sm-and-up" id="mi-toolbar-title-small">
           <div style="display:inline-block;margin-bottom:-7px;"  class="mi-logo-toolbar">
@@ -77,9 +77,9 @@ export default {
   /*border:solid 1px red;*/
 }
 .mi-logo-toolbar {
-  background: url("/static/sprite.svg") no-repeat -155px -45px;
-	width: 76px;
-	height: 33px;
+  background: url("/static/sprite.svg") no-repeat -346px -39px;
+	width: 133px;
+	height: 58px;
 }
 #mi-toolbar-title {
   font-family: mainFont;
