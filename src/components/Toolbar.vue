@@ -77,9 +77,9 @@ export default {
   /*border:solid 1px red;*/
 }
 .mi-logo-toolbar {
-  background: url("/static/sprite.svg") no-repeat -81px -47px;
-	width: 208px;
-	height: 31px;
+  background: url("/static/sprite.svg") no-repeat -155px -45px;
+	width: 76px;
+	height: 33px;
 }
 #mi-toolbar-title {
   font-family: mainFont;

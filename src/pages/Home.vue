@@ -1,30 +1,19 @@
 <template>
   <div class="color-back" style="width:100%;height:100%;">
-    <Toolbar ref="Toolbar"/>
+    <Toolbar ref="toolbar"/>
 
-<<<<<<< HEAD
-   <div v-for="card in data">
+<vue-draggable-resizable :resizable="false" :x="1000" :y="480" style="z-index:10">
+    <Form ref="form"/>
+</vue-draggable-resizable>
+
+   <div v-for="card in data" style="z-index:11" :key="card">
    <vue-draggable-resizable :resizable="false" :x="generateX()" :y="generateY()" >
       <Annonce ref="annonce" :card="card" />
     </vue-draggable-resizable>
   </div>
-    <vue-draggable-resizable :resizable="false" :x="200" :y="200">
+    <vue-draggable-resizable :resizable="false" :x="500" :y="500" style="z-index:10">
     <Search ref="search" v-on:clicked-show-detail="clickedShowDetailModal" v-on:reset="removeFilter"/>
   </vue-draggable-resizable>
-=======
-  <vue-draggable-resizable :resizable="false" style="z-index:10">
-    <Search ref="search"/>
-  </vue-draggable-resizable>
-    
-        <vue-draggable-resizable :resizable="false" v-for="card in data" style="z-index:11">
-      <Annonce ref="annonce" :card="card" />
-    </vue-draggable-resizable>
-
-
-
-
-
->>>>>>> felix
 
   </div>
 </template>
@@ -32,6 +21,8 @@
 <script>
 import Annonce from "@/components/Annonce";
 import Toolbar from "@/components/Toolbar";
+import Form from "@/components/Form";
+
 import Search from "@/components/Search";
 import json from "@/../static/data.json"
 import Vue from "vue";
@@ -59,7 +50,8 @@ export default {
   components: {
     Annonce,
     Toolbar,
-    Search
+    Search,
+    Form
   },
   methods: {
     removeFilter: function (v) {
@@ -142,5 +134,12 @@ export default {
 	100% {
 		background-position: 0% 50%
 	}
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

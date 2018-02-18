@@ -1,57 +1,57 @@
 {
 	"0": {
 		"name": "Mathilde V.",
-		"title": "BabySitting",
+		"title": "Cours",
 		"score": "5/5",
-		"urgent": true,
-<<<<<<< HEAD
-		"text": "Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée. Si vous chercher quelqu'un de serieux pour vos enfants, n'hésitez pas à me contacter via l'Affiche.",
+		"urgent": false,
+		"text": "Bonjour, je suis Mathilde, 21 ans étudiante en physique, je donne des cours de maths jusqu'au niveau Lycée. Contactez moi !",
 		"pro": false,
 		"timeToShow": 6
 	},
 	"1": {
+		"name": "Margot L.",
 		"title": "Vente Vélo",
-		"score": "good",
+		"score": "5/5",
 		"urgent": false,
-		"text": "Bonjour, je suis Thomas, je vends mon vélo pour la mautide somme de 150e. bla bla bla blabla bla bla blabla bla bla blabla bla bla bla",
+		"text": "Hello, je vends mon vélo 150€. Disponible par e-mail. Margot",
 		"pro": true,
 		"timeToShow": 7
 	},
 
 	"2": {
+		"name": "Tiphaine S.",
 		"title": "BabySitting",
-		"score": "weak",
+		"score": "4/5",
 		"urgent": true,
-		"text": "Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée. Si vous chercher quelqu'un de serieux pour vos enfants, n'hésitez pas à me contacter via l'Affiche.",
+		"text": "Bonjour, je m’appelle Julie, j'ai 17 ans et suis disponible pour garder votre enfant 2 jours/semaine. Merci",
 		"pro": false,
 		"timeToShow": 8
 	},
 	"3": {
+		"name": "Sylvie T.",
 		"title": "Vente Vélo",
-		"score": "good",
+		"score": "4/5",
 		"urgent": false,
-		"text": "Bonjour, je suis Thomas, je vends mon vélo pour la mautide somme de 150e. bla bla bla blabla bla bla blabla bla bla blabla bla bla bla",
+		"text": "Bonjour, Sylvie, je cherche une pompe à vélo d’occasion pas trop chère, budget 10€. Dispo par tel au 06 51 78 32 41.",
 		"pro": true,
 		"timeToShow": 9
 	},
 	"4": {
+		"name": "Sophie B.",
 		"title": "BabySitting",
-		"score": "weak",
-		"urgent": true,
-		"text": "Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée. Si vous chercher quelqu'un de serieux pour vos enfants, n'hésitez pas à me contacter via l'Affiche.",
+		"score": "5/5",
+		"urgent": false,
+		"text": "Bonjour, nous avons besoin en urgence d’une babysitter pour mardi soir 19h-23h. Sophie et Fred.",
 		"pro": false,
 		"timeToShow": 11
 	},
 	"5": {
+		"name": "Anne R.",
 		"title": "Vente Vélo",
-		"score": "good",
+		"score": "3/5",
 		"urgent": false,
-		"text": "Bonjour, je suis Thomas, je vends mon vélo pour la mautide somme de 150e. bla bla bla blabla bla bla blabla bla bla blabla bla bla bla",
-		"pro": true,
-		"timeToShow": 13
-=======
-		"text": "Bonjour, je suis Julie, j'ai 17 ans et je donne des cours de math au éléves de college jusqu'au Lycée.",
-		"pro": false
->>>>>>> felix
+		"timeToShow": 13,
+		"text": "Bonjour, Anne, recherche vélo style hollandais, si possible de couleur jaune. Contactez moi par email.",
+		"pro": true
 	}
 }
